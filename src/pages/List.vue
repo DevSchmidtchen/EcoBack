@@ -1,16 +1,14 @@
 <template>
 
 <div class="flex items-center justify-center w-screen my-8 ">
-  <form method="GET">
     <div class="relative text-gray-600 focus-within:text-gray-400">
       <span class="absolute inset-y-0 left-0 flex items-center pl-2">
         <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </button>
       </span>
-      <input type="search" name="q" class="py-2 text-sm text-white bg-gray-200 rounded-md pl-10 focus:outline-none focus:bg-white-100 focus:text-gray-500" placeholder="Search..." autocomplete="off">
+      <input type="search" v-model="searchText" class="py-2 text-sm text-white bg-gray-200 rounded-md pl-10 focus:outline-none focus:bg-white-100 focus:text-gray-500" placeholder="Add item..." autocomplete="off">
     </div>
-  </form>
 </div>
 
 
@@ -100,23 +98,19 @@
     </div>
   </div>
 </div-->
-<section class="list_item_section">
+<section v-if="searchText" class="list_item_section">
+  <div class="list_item_div">
+    <div v-for="item in filteredItems" :class="[item.background, 'list_item']" @click="addItem(item)">
+        <img :src="item.image" alt="">
+        <p>{{ item.name }}</p>
+    </div>
+  </div>
+</section>
+<section v-else class="list_item_section">
 <div class="list_item_div">
-    <div class="list_item">
-        <img src="../assets/icon/apple.png" alt="">
-        <p>Äppfle - 4 Stk.</p>
-    </div>
-  <div class="list_item">
-        <img src="../assets/icon/bread.png" alt="">
-        <p>Brot - 1 Stk.</p>
-    </div>
-  <div class="list_item">
-        <img src="../assets/icon/carrot.png" alt="">
-        <p>Karotten - 500g</p>
-    </div>
-  <div class="list_item">
-        <img src="../assets/icon/strawberry.png" alt="">
-        <p>Erdbeeren - 400g</p>
+    <div v-for="(item, index) in shoppingList" :class="[item.background, 'list_item']" @click="shoppingList.splice(index, 1)">
+        <img :src="item.image" alt="">
+        <p>{{ item.name }}</p>
     </div>
 </div>
 </section>
@@ -124,7 +118,76 @@
 </template>
 
 <script setup>
+  import { ref, computed } from "vue"
+  import Apple from '../assets/icon/apple.png';
+  import Milk from '../assets/icon/hemp-milk.png';
+  import OatMilk from '../assets/icon/oat_milk.png';
+  import Steak from '../assets/icon/steak.png';
+  import Bread from '../assets/icon/bread.png';
+  import Carrot from '../assets/icon/carrot.png';
+  import Strawberry from '../assets/icon/strawberry.png';
+
+  const searchText = ref(null);
   
+  const shoppingList = ref([
+    {
+      name: "Apple",
+      background: "bg-green-500",
+      image: Apple,
+    },
+    {
+      name: "Steak",
+      background: "bg-red-700",
+      image: Steak,
+    }
+  ]);
+  
+  const items = [
+    {
+      name: "Apple",
+      background: "bg-green-500",
+      image: Apple,
+    },
+    {
+      name: "Milk",
+      background: "bg-orange-500",
+      image: Milk,
+    },
+    {
+      name: "Oatmilk",
+      background: "bg-green-500",
+      image: OatMilk,
+    },
+    {
+      name: "Steak",
+      background: "bg-red-700",
+      image: Steak,
+    },
+    {
+      name: "Bread",
+      background: "bg-green-500",
+      image: Bread ,
+    },
+    {
+      name: "Carrot",
+      background: "bg-green-500",
+      image: Carrot ,
+    },
+    {
+      name: "Strawberry",
+      background: "bg-green-500",
+      image: Strawberry ,
+    }
+];
+
+  const filteredItems = computed(() => {
+    return items.filter((item) => item.name.toLowerCase().includes(searchText.value.toLowerCase()));
+  });
+
+  function addItem(item) {
+    shoppingList.value.push(item);
+    searchText.value = "";
+  }
 </script>
 
 <style>
@@ -150,7 +213,6 @@
   }
 
   .list_item {
-      background-color: #32cb00;
       display: inline-block;
       border-radius: 10px;
       float: left;

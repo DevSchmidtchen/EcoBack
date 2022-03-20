@@ -3,7 +3,7 @@
         <div class="alternative_item">
             <div class="alternative_item_element first">
                 <img src="../assets/products/milk.png" alt="">
-                <p>Milch</p>
+                <p>Milk</p>
             </div>
             <div class="alternative_item_element middle">
                 <img src="../assets/icon/arrow_forward.svg" alt="" srcset="">
@@ -11,13 +11,13 @@
             </div>
             <div class="alternative_item_element last">
                 <img src="../assets/products/hafer_milch.png" alt="">
-                <p>Hafer Milch</p>
+                <p>Oat Milk</p>
             </div>
         </div>
         <div class="alternative_item">
               <div class="alternative_item_element first">
                   <img src="../assets/products/fleisch.png" alt="">
-                  <p>Fleisch</p>
+                  <p>Steak</p>
               </div>
               <div class="alternative_item_element middle">
                   <img src="../assets/icon/arrow_forward.svg" alt="" srcset="">
@@ -31,7 +31,7 @@
           <div class="alternative_item">
                 <div class="alternative_item_element first">
                     <img src="../assets/products/flasche.png" alt="">
-                    <p>Plastik Flasche</p>
+                    <p>Plastic Bottle</p>
                 </div>
                 <div class="alternative_item_element middle">
                     <img src="../assets/icon/arrow_forward.svg" alt="" srcset="">
@@ -39,23 +39,9 @@
                 </div>
                 <div class="alternative_item_element last">
                     <img src="../assets/products/flasche2.png" alt="">
-                    <p>Glas</p>
+                    <p>Glas Bottle</p>
                 </div>
             </div>
-            <div class="alternative_item">
-                      <div class="alternative_item_element first">
-                          <img src="../assets/products/milk.png" alt="">
-                          <p>Milch</p>
-                      </div>
-                      <div class="alternative_item_element middle">
-                          <img src="../assets/icon/arrow_forward.svg" alt="" srcset="">
-                          <p>- 1.5 Kg CO2</p>
-                      </div>
-                      <div class="alternative_item_element last">
-                          <img src="../assets/products/hafer_milch.png" alt="">
-                          <p>Hafer Milch</p>
-                      </div>
-                  </div>
     </section>
 </template>
 

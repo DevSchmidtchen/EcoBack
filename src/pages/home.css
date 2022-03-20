@@ -20,7 +20,7 @@
 }
 
 .score div {
-    display: block ruby;
+    display: inline-flex;
     line-height: 100px;
 }
 
@@ -30,7 +30,11 @@
 
 .score div h1,
 .score div p {
-    margin: 0px;
+  margin: 0px;
+}
+
+.score div p {
+  padding-top:15px;
 }
 
 .chart {
@@ -41,4 +45,49 @@
 
 .chart canvas {
   color: white;
+}
+
+.name {
+  float:left
+}
+
+.ranking {
+  margin-top: 20px;
+  border-width: 5px;
+  background-color: #ffffff;
+  padding: 5px;
+  display: block;
+  color: white;
+  diplay:flex;
+}
+
+.ranking2 {
+  background-color: #32cb00;
+  border-radius: 10px;
+  height: 40px;
+  margin: 5px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ranking1 {
+  background-color: #259500;
+  white-space: nowrap;
+  border-radius: 10px;
+  height: 40px;
+  margin: 5px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ranking div img {
+  float:right;
+}
+
+.co2 {
+  float: right;
 }

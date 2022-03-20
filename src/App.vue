@@ -10,7 +10,7 @@
         <router-link to="/history" class="bloc-icon" active-class="border-2 rounded-full p-5 bg-green-100">
             <img src="./assets/icon/history.svg" alt="">
         </router-link>
-        <router-link to="/scan" class="bloc-icon rounded-full border-green-500 border-4 p-5">
+        <router-link to="/scan" class="bloc-icon2 rounded-full border-green-500 border-4 p-5">
             <img src="./assets/icon/qr.svg" alt="">
         </router-link>
         <router-link to="/list" href="#" class="bloc-icon" active-class="border-2 rounded-full p-5 bg-green-100">
@@ -42,6 +42,15 @@ import HelloWorld from './components/HelloWorld.vue'
   }
   
   .bloc-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    border-width: 2px;
+    border-color: #F1F1F1;
+  }
+
+  .bloc-icon2 {
     display: flex;
     justify-content: center;
     align-items: center;
