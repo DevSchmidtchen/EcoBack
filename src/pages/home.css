@@ -1,0 +1,44 @@
+
+
+.item_section {
+    display: block;
+    margin: 20px;
+}
+
+
+.item {
+    border-radius: 10px;
+}
+
+.score {
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #32cb00 100%), url('../assets/forest.jpg') no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    text-align: center;
+    color:white;
+}
+
+.score div {
+    display: block ruby;
+    line-height: 100px;
+}
+
+.score div h1 {
+    font-size: 50px;
+}
+
+.score div h1,
+.score div p {
+    margin: 0px;
+}
+
+.chart {
+  background-color: #ffffff;
+  margin-top: 20px;
+  border-width: 5px;
+}
+
+.chart canvas {
+  color: white;
+}

@@ -1,0 +1,14 @@
+{
+    "value": [
+        {
+          "category": "honey",
+          "footprintUOM": "kg",
+          "averageFootprintPerCategory": "0.69600000000000",
+        },
+        {
+          "category": "oil",
+          "footprintUOM": "kg",
+          "averageFootprintPerCategory": "",
+        },
+    ]
+}
