@@ -12,7 +12,7 @@
 
 .score {
     height: 100px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #32cb00 100%), url('../assets/forest.jpg') no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #22C55E 100%), url('../assets/forest.jpg') no-repeat;
     background-position: center bottom;
     background-size: cover;
     text-align: center;
@@ -62,7 +62,7 @@
 }
 
 .ranking2 {
-  background-color: #32cb00;
+  background-color: #22C55E;
   border-radius: 10px;
   height: 40px;
   margin: 5px;

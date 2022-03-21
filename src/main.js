@@ -14,7 +14,6 @@ import Result from './pages/Result.vue'
 import Home from './pages/Home.vue'
 import Coupon from './pages/Coupon.vue'
 import Comparison from './pages/Comparison.vue'
-import Ranking from './pages/Ranking.vue'
 
 const routes = [
   { path: '/', component: Login },
@@ -26,7 +25,6 @@ const routes = [
   { path: '/home', component: Home },
   { path: '/coupon', component: Coupon },
   { path: '/comparison', component: Comparison },
-  { path: '/ranking', component: Ranking },
 ]
 
 const router = createRouter({

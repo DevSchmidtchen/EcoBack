@@ -3,7 +3,7 @@
         <div class="item score">
             <div>
               <h1>625</h1>
-              <p>Kg</p>           
+              <p> Kg</p>           
             </div>
         </div>
         <div class="item chart">
@@ -99,18 +99,18 @@ const myChart = new Chart(ctx,
     scales: {
         y: {
           grid: {
-            color: '#32cb00'
+            color: '#22C55E'
           },
           ticks: {
-            color: '#32cb00'
+            color: '#22C55E'
           }
         },
         x: {
           grid: {
-            color: '#32cb00'
+            color: '#22C55E'
           },
           ticks: {
-            color: '#32cb00'
+            color: '#22C55E'
           }
         }
       },

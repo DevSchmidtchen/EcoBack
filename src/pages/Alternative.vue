@@ -58,7 +58,7 @@
   }
   
 .alternative_item {
-    background-color: #32cb00;
+    background-color: #22C55E;
     display: inline-block;
     border-radius: 10px;
 }

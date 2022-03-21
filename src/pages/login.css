@@ -52,12 +52,12 @@ h2.inactive {
 
 h2.active {
   color: #0d0d0d;
-  border-bottom: 2px solid #32cb00;
+  border-bottom: 2px solid #22C55E;
 }
 
 
 .button  {
-  background-color: #32cb00;
+  background-color: #22C55E;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -79,7 +79,7 @@ h2.active {
 }
 
 .button:hover  {
-  background-color: #32cb00;
+  background-color: #22C55E;
 }
 
 .button:active  {
@@ -115,7 +115,7 @@ input[type=password] {
 input[type=text]:focus,
 input[type=password]:focus {
   background-color: #fff;
-  border-bottom: 2px solid #32cb00;
+  border-bottom: 2px solid #22C55E;
   outline-width: 0;
 }
 
